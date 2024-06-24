@@ -67,3 +67,5 @@ to count rows and distinct primary:
 
      - CountDistinctPrimaryKey =
 DISTINCTCOUNT(TableName[PrimaryKeyColumn])
+
+Link to power BI : https://app.powerbi.com/groups/b1d78ba0-d880-4a4a-b08c-88cffbcfde02/reports/1a85e315-2d09-4354-b806-544135023fac/d2364b8a0bf45f1bcceb?experience=power-bi
