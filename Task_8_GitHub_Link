@@ -1,0 +1,69 @@
+The data consists of numerous CSV files, each corresponding
+to orders from various months and years. 
+
+
+I loaded these CSV files, cleanse and normalize the data,
+and create the data marts. Finally, I provided the row counts and distinct
+primary key counts for each data marts using powerBI. I started by loading all
+the data into a single DataFrame and inspecting it. Then, I proceed with the
+required tasks. (Load all data into a single DataFrame, Load and concatenate all
+the CSV files, Cleanse and Normalize the Data, taking into consideration that
+all data types are consistent, handle missing values, and duplicates data. I Created
+three Data Marts and separated the data into different data marts based on the
+business logic (Order, customer and product data mart). Then I calculated the
+Row and Distinct Primary Key Counts for each data mart and saved the results in
+a excel file.
+
+
+
+
+Here are the steps to cleanse, normalize, and analyze the data
+using Power BI:
+
+
+
+Step 1: Load Data into Power BI
+
+1. Opened Power BI Desktop.
+
+2. Clicked on Get Data in the Home ribbon.
+
+3. Selected Folder as the data source.
+
+4. Navigate to the folder where my CSV files are stored and click OK.
+
+5. Power BI displayed a list of files. Clicked Combine & Load.
+
+
+
+Step 2: Cleanse and Normalize Data
+
+In the Power Query Editor, I performed various data cleansing tasks:
+
+
+1.Change Data Types
+
+
+2.Remove Rows with Errors
+
+
+Step 3: Create Data Marts
+
+In the Power Query Editor, I created three data marts by using the Reference
+query to add and remove unnecessary columns and filter rows as needed.
+
+   
+
+Step 4: Count Rows and Distinct Primary Keys
+
+In the Data view of Power BI:
+
+   - Select the table.
+
+   - Go to the Modeling tab and create a new measure using formulas
+to count rows and distinct primary:
+
+     - CountRows = COUNTROWS(TableName)
+
+     - CountDistinctPrimaryKey =
+DISTINCTCOUNT(TableName[PrimaryKeyColumn])
